@@ -1,0 +1,22 @@
+.galleyRow{
+  /* box-shadow: 0px 0px 4px 4px rgba(50, 50, 50, 0.75); */
+  align-items: center;
+  text-align: center;
+}
+
+.galleryTitle{
+  font-size: xx-large;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+.dvImg{
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+  background-color: antiquewhite;
+}
+.dvVideo{
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+  background-color: cadetblue;
+}
+.dvUpEvnts{
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
+  background-color: aliceblue;
+}

@@ -1,0 +1,27 @@
+[
+  {
+    "imgId":1,
+    "imgUrl":"assets/images/imgEvents/img1.jpg",
+    "imgTitle":"Image 1",
+    "imgDesc":"Test of something it is very important"
+  },
+  {
+    "imgId":2,
+    "imgUrl":"assets/images/imgEvents/img2.jpg",
+    "imgTitle":"Image two",
+    "imgDesc":"Test of something it is very important"
+  },
+  {
+    "imgId":3,
+    "imgUrl":"assets/images/imgEvents/img3.jpg",
+    "imgTitle":"Image Three",
+    "imgDesc":"Test of something it is very important"
+  }
+  ,
+  {
+    "imgId":4,
+    "imgUrl":"assets/images/imgEvents/img4.webp",
+    "imgTitle":"Image four",
+    "imgDesc":"Test of something it is very important"
+  }
+]

@@ -1,0 +1,66 @@
+<!-- <div id="carouselEvents" class="carousel slide carousel-fade" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselEvents"  *ngFor="let img of images;let index = index" [attr.data-slide-to]="index"></li>
+  </ol>
+  <div class="carousel-inner">
+      <div class="item" *ngFor="let img of images;let index = index;let isFirst = first" [ngClass]="{active:isFirst}">
+        <div style="background-image: url('{{img.imgUrl}}');">
+          <img class="eventSectionImg" [src]="img.imgUrl" [alt]="img.imgTitle">
+          <div class="carousel-caption d-none d-md-block">
+            <h1 [textContent]="img.imgTitle"></h1>
+            <p [textContent]="img.imgDesc"></p>
+          </div>
+        </div>
+
+
+      </div>
+  </div>
+  <a class="carousel-control left" href="#carouselEvents" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="carousel-control right" href="#carouselEvents" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div> -->
+<div class="dvEventHeight row" >
+  <div class="dvItem col-sm-12 col-lg-12" *ngFor="let eventItem of eventDetails">
+    <div class="dv_Img_Upcmng col-sm-12 col-lg-4">
+      <img class="imgUpcmng" src="{{eventItem.eventImgUrl}}" >
+    </div>
+    <div class="dv_txt_Upcmng col-sm-12 col-lg-8">
+      <div class="row">
+        <div class="col-sm-12"><h2>{{eventItem.eventTitle}}</h2></div>
+        <div class="col-sm-12"><h2>{{eventItem.eventDate}}</h2></div>
+        <div class="col-sm-12"><p >{{eventItem.eventDesc}}...</p></div>
+      </div>
+    </div>
+  </div>
+  <!-- <div class="dvItem col-sm-12 col-lg-12">
+    <div class="dv_Img_Upcmng col-sm-12 col-lg-4">
+      <img class="imgUpcmng" src="assets/images/imgEvents/upcomging/img1.jpg" >
+    </div>
+    <div class="dv_txt_Upcmng col-sm-12 col-lg-8">
+      <div class="row">
+        <div class="col-sm-12"><h2>Holy Communion</h2></div>
+        <div class="col-sm-12"><h2>06-Aug-2023</h2></div>
+        <div class="col-sm-12"><p>He is the bread we need to eat to live after this life...</p></div>
+      </div>
+    </div>
+  </div>
+  <div class="dvItem col-sm-12 col-lg-12">
+    <div class="dv_Img_Upcmng col-sm-12 col-lg-4">
+      <img class="imgUpcmng" src="assets/images/imgEvents/upcomging/img1.jpg" >
+    </div>
+    <div class="dv_txt_Upcmng col-sm-12 col-lg-8">
+      <div class="row">
+        <div class="col-sm-12"><h2>Holy Communion</h2></div>
+        <div class="col-sm-12"><h2>06-Aug-2023</h2></div>
+        <div class="col-sm-12"><p>He is the bread we need to eat to live after this life...</p></div>
+      </div>
+    </div>
+  </div> -->
+  <div class="col-sm-12 col-lg-12">
+    <a href="#">View All</a>
+  </div>
+
+</div>

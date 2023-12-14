@@ -1,0 +1,36 @@
+
+.gallerySectionVideo{
+  width: 50%;
+}
+.gallcarousel1{
+  display: block !important;
+}
+.thumbnailVideo{
+  width: 50px !important;
+  height: 50px !important;
+  opacity: 0.6 !important;
+}
+#carouselVideoGallery .carousel-indicators .active{
+  width: 50px !important;
+  height: 50px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  opacity: 1 !important;
+
+}
+.btnthumbnailVideo{
+  border: 0 !important;
+  padding: 0 !important;
+}
+.vdSlides{
+  width: 200px !important;
+}
+.vdSkidesitem{
+  margin-top: 3%;
+}
+
+.eventSectionImg{
+  width: 100% !important;
+  height: 500px;
+}
+

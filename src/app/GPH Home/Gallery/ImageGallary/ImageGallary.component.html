@@ -1,0 +1,66 @@
+<!-- <div id="carouselImgGallery" class="carousel slide" data-ride="carousel">
+  <div class="imgGallry carousel-indicators" id="imgGalleryThumb">
+    <button class="btnthumbnailImg" data-target="#carouselImgGallery"  *ngFor="let img of images;let index = index" [attr.data-slide-to]="index" class="active">
+      <img [src]="img.backGroundUrl" class="thumbnailImg">
+    </button>
+    <a class="carousel-control left" href="#carouselImgGallery" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="carousel-control right" href="#carouselImgGallery" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+  </div>
+  <div class="carousel-inner">
+      <div class="item" data-bs-interval="600000" *ngFor="let img of images;let index = index;let isFirst = first" [ngClass]="{active:isFirst}">
+          <img class="gallerySectionImg" [src]="img.backGroundUrl" [alt]="img.aboutTitle">
+          <div class="carousel-caption d-none d-md-block">
+            <h1 [textContent]="img.aboutTitle"></h1>
+            <p [textContent]="img.aboutDesc"></p>
+          </div>
+      </div>
+  </div>
+  <a class="carousel-control left" href="#carouselImgGallery" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="carousel-control right" href="#carouselImgGallery" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div> -->
+<!-- <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideMainConfig">
+  <div ngxSlickItem *ngFor="let img of images;let index = index;let isFirst = first">
+    <img class="gallerySectionImg" [src]="img.backGroundUrl" [alt]="img.aboutTitle">
+</div>
+</ngx-slick-carousel> -->
+<!-- <ngx-slick-carousel class="carousel" #slickModal="slick-carousel" [config]="slideMainConfig">
+  <div ngxSlickItem *ngFor="let img of images;let index = index;let isFirst = first">
+    <img class="gallerySectionImg" [src]="img.backGroundUrl" [alt]="img.aboutTitle">
+</div>
+</ngx-slick-carousel> -->
+<div class="row" style="height: 500px;">
+  <div class="feedback-slides-img">
+    <div class="client-feedback-img">
+        <ngx-slick-carousel
+            class="carousel feedback-img"
+            #slickModal="slick-carousel"
+            [config]="imagesSlider">
+            <div ngxSlickItem *ngFor="let slide of images" class="slide">
+                    <img class="imgGallerySize" src="{{ slide.backGroundUrl }}" alt="">
+            </div>
+        </ngx-slick-carousel>
+    </div>
+  </div>
+  <div class="client-thumbnails-img">
+      <ngx-slick-carousel
+        class="carousel thumbs-img"
+        #slickModal="slick-carousel"
+        [config]="thumbnailsSlider ">
+        <div ngxSlickItem *ngFor="let slide of images" class="slide">
+                <img class="imgthmbGallerySize" src="{{ slide.backGroundUrl }}" alt="">
+        </div>
+    </ngx-slick-carousel>
+  </div>
+</div>
+
+
+
+

@@ -1,0 +1,48 @@
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top  navBgColor">
+  <button class="navbar-toggler" type="button" [ngClass]="{ 'show': navbarOpen }"
+          (click)="toggleNavbar()">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse"
+       [ngClass]="{ 'show': navbarOpen }">
+    <div class="col-md-1">
+    </div>
+    <div class="col-md-2">
+      <a class="navbar-brand" href="#">
+        <img src="{{logoUrl}}" style="width: 100%;">
+      </a>
+    </div>
+    <div class="col-md-8">
+      <ul class="navbar-nav mr-auto" style="float: right;">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/">Home</a>
+        </li>
+
+        <!-- <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            New Here
+          </a>
+          <div class="dropdown-menu fade-down" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" routerLink="/comingSoon">About Us</a>
+            <a class="dropdown-item" routerLink="/comingSoon">Service Timings</a>
+            <a class="dropdown-item" routerLink="/comingSoon">Contacts</a>
+          </div>
+        </li> -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Ministry
+          </a>
+          <div class="dropdown-menu fade-down" aria-labelledby="navbarDropdownMenuLink">
+            <!-- <a class="dropdown-item" routerLink="/comingSoon">Outreach</a> -->
+            <a class="dropdown-item" routerLink="/submitRequest">Prayer Requests</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-1">
+    </div>
+  </div>
+</nav>
+
+
+

@@ -1,0 +1,29 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+.a_readMore{
+  font-weight: bold;
+}
+.row{
+  margin:0px !important;
+  --bs-gutter-x: 0rem !important;
+}
+.carousel-control-next, .carousel-control-prev{
+  background: black !important;
+  width: 5% !important;
+}
+.multilist-margin{
+  margin-right: 2% !important;
+}
+.aboutSection .carousel-inner{
+height: 400px !important;
+}
+body{
+  font-family: initial !important;
+  font-size: initial !important;
+  font-weight: initial !important;
+  background-color: ivory !important;
+}
+.dvBoxShadow{
+  box-shadow: 0px 1px rgba(0, 0, 0, 0.1);
+}

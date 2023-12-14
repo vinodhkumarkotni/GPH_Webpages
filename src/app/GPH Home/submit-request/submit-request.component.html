@@ -1,0 +1,84 @@
+<div class="container txtSize" style="margin-top: 5%;">
+  <div class="panel panel-default">
+    <div class="panel-heading">Prayer Request</div>
+    <div class="panel-body">
+      <!-- Template Driven Approach-->
+      <!-- <form (ngSubmit)='onSubmitTemp(Frm)' #Frm="ngForm">
+        <div class="row">
+          <div class="col-sm-12 col-md-2">
+            <span>Name:</span>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <input type="text" class="form-control" ngModel #propNme="ngModel" name="Name" required />
+            <span *ngIf="!propNme.valid && propNme.touched" class="err-Text">Name is Required</span>
+          </div>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+          <div class="col-sm-12 col-md-2"><span>Phone Number:</span></div>
+          <div class="col-sm-12 col-md-8">
+            <input type="text" minlength="10" maxlength="10" class="form-control txtSize" #propPhone="ngModel" placeholder="Optional" ngModel name="Phone" />
+            <span *ngIf="!propPhone.valid && propPhone.touched" class="error-block">
+              <span *ngIf="propPhone.errors?.['minlength'] || propPhone.errors?.['maxlength']">Phone Number should be 10 char length </span>
+            </span>
+          </div>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+          <div class="col-sm-12 col-md-2"><span>Prayer Request:</span></div>
+          <div class="col-sm-12 col-md-8">
+            <textarea type="text" class="form-control" rows="12" style="resize: none" ngModel #propRqst="ngModel" name="Request" required></textarea>
+            <span *ngIf="!propRqst.valid && propRqst.touched" class="err-Text">Prayer Request is Required</span>
+          </div>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+          <div class="col-sm-12" style="text-align: center;">
+            <button [disabled]="!Frm.valid" type="submit" class="btn btn-primary txtSize" style="margin-right: 5px;">Save</button>
+            <a><button class="btn btn-danger txtSize" (click)="onCancel()">Cancel</button></a>
+          </div>
+        </div>
+      </form> -->
+       <!-- Reactive  Forms Approach-->
+      <form (ngSubmit)='onSubmit()' [formGroup]="submitPrayerRequestForm">
+        <div class="row">
+          <div class="col-sm-12 col-md-2">
+            <span>Name:</span>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <input type="text" class="form-control" formControlName="Name" />
+            <span *ngIf="!submitPrayerRequestForm.get('Name')?.valid && submitPrayerRequestForm.get('Name')?.touched"
+            class="err-Text">Name is Required</span>
+          </div>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+          <div class="col-sm-12 col-md-2"><span>Phone Number:</span></div>
+          <div class="col-sm-12 col-md-6">
+            <input type="text" minlength="10" maxlength="10" class="form-control txtSize" placeholder="Optional" formControlName="PhoneNumber" />
+            <span *ngIf="!PhoneNumber.valid && PhoneNumber.touched" class="err-Text">
+              <span *ngIf="PhoneNumber.hasError('pattern')">Invalid Mobile Number </span>
+              <span *ngIf="PhoneNumber.hasError('minlength') || PhoneNumber.hasError('maxlength')">Phone Number should be 10 char length </span>
+            </span>
+          </div>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+          <div class="col-sm-12 col-md-2"><span>Prayer Request:</span></div>
+          <div class="col-sm-12 col-md-6">
+            <textarea type="text" class="form-control" rows="12" style="resize: none" formControlName="PrayerRequest"></textarea>
+            <span *ngIf="!submitPrayerRequestForm.get('PrayerRequest')?.valid && submitPrayerRequestForm.get('PrayerRequest')?.touched"
+            class="err-Text">Prayer Request is Required</span>
+          </div>
+        </div>
+        <div class="row">&nbsp;</div>
+        <div class="row">
+          <div class="col-sm-12" style="text-align: center;">
+            <button [disabled]="!submitPrayerRequestForm.valid"  type="submit" class="btn btn-primary txtSize" style="margin-right: 5px;">Save</button>
+            <a><button class="btn btn-danger txtSize" (click)="onCancel()">Cancel</button></a>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

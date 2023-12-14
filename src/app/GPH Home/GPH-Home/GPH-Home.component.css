@@ -1,0 +1,34 @@
+
+
+
+.headerSection{
+  padding: 0;
+  font-size: xx-large;
+}
+.welcomeSection{
+  text-align: center;
+  /* font-size: xx-large; */
+}
+.worshipsSection{
+  text-align: center;
+  background-color: white;
+}
+.reachUsSection{
+  text-align: center;
+}
+.gallerySection{
+  background-color: white;
+}
+.aboutSection{
+  text-align: center;
+}
+.emptyFooter{
+  background-color: white;
+}
+.footerSection{
+  background-color: darkgray;
+}
+.col-lg-12{
+  padding: 0 !important;
+}
+

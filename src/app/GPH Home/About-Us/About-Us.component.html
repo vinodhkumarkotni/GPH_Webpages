@@ -1,0 +1,24 @@
+<div class="col-lg-12">
+  <div class="col-lg-12" class="dv_about">
+    <div class="" class="aboutTitle" ><h2>Our Missions</h2></div>
+    <div class="">
+              <carousel class="aboutSlides"
+              [itemsPerSlide]="itemsPerSlide"
+              [singleSlideOffset]="singleSlideOffset"
+                  [interval]="5000"
+                  [showIndicators]="false"
+                  >
+
+          <slide class="col-xs-12 col-lg-3 slideItem animated fadeIn"  *ngFor="let slide of slidesdata">
+            <div class="divAboutItem"  style="background-image: url('{{slide.backGroundUrl}}');">
+              <div><h3>{{slide.aboutTitle}}</h3></div>
+              <h4 class="abtSlideDesc">{{slide.aboutDesc}}</h4>
+            </div>
+          </slide>
+        </carousel>
+    </div>
+  </div>
+</div>
+
+
+

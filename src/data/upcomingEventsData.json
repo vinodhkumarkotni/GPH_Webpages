@@ -1,0 +1,22 @@
+[{
+  "eventId":1,
+  "eventTitle": "Holy Communion",
+  "eventDate":"06-Aug-2023",
+  "eventDesc":"Grace prayer house is a place where God lives in his house."
+  ,"eventImgUrl": "assets/images/imgEvents/upcomging/img1.jpg"
+},
+{
+  "eventId":2,
+  "eventTitle": "Christmas",
+  "eventDate":"25-Dec-2023",
+  "eventDesc":"Grace prayer house is a place where God lives in his house."
+  ,"eventImgUrl": "assets/images/imgEvents/upcomging/img2.png"
+},
+{
+  "eventId":3,
+  "eventTitle": "New Year",
+  "eventDate":"01-Jan-2024",
+  "eventDesc":"Grace prayer house is a place where God lives in his house."
+  ,"eventImgUrl": "assets/images/imgEvents/upcomging/img3.jpeg"
+}
+]

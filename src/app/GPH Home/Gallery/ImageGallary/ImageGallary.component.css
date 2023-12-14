@@ -1,0 +1,40 @@
+
+.gallerySectionImg{
+  width: 100%;
+  height: 500px !important;
+}
+.gallcarousel1{
+  display: block !important;
+}
+.thumbnailImg{
+  width: 50px !important;
+  height: 50px !important;
+  opacity: 0.6 !important;
+}
+#carouselImgGallery .carousel-indicators .active{
+  width: 50px !important;
+  height: 50px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  opacity: 1 !important;
+
+}
+.btnthumbnailImg{
+  border: 0 !important;
+  padding: 0 !important;
+}
+.feedback-slides-img{
+  height: 400px !important;
+}
+.imgGallerySize{
+  width: 100%;
+  height: 400px !important;
+}
+.imgthmbGallerySize{
+  width: 100% !important;
+  height: 100px;
+  opacity: 1 !important;
+}
+
+
+

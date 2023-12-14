@@ -1,0 +1,20 @@
+[
+  {
+    "ftrIconId":1,
+    "IconClass":"fa fa-facebook",
+    "IconUrl":"https://www.facebook.com/profile.php?id=100081995317529&mibextid=ZbWKwL",
+    "IconTitle":"facebook"
+  },
+  {
+    "ftrIconId":2,
+    "IconClass":"fa fa-instagram",
+    "IconUrl":"https://instagram.com/graceprayerhousehyd?igshid=MzRlODBiNWFlZA==",
+    "IconTitle":"instagram"
+  },
+  {
+    "ftrIconId":3,
+    "IconClass":"fa fa-youtube",
+    "IconUrl":"https://www.youtube.com/@graceprayerhouse2022",
+    "IconTitle":"YouTube"
+  }
+]

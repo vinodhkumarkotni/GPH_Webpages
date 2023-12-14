@@ -1,0 +1,131 @@
+/* body {
+  align-items: center;
+  background: #E3E3E3;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+} */
+.dvNeedhelp{
+  padding: 15px;
+}
+.innerDiv{
+  margin-left: 50%;
+}
+.rcornersPrayer {
+  /* border-radius: 25px;
+  border: 2px solid #73AD21;
+  width: 100px;
+  height: 100px; */
+  width: 100px;
+	height: 100px;
+  border: 2px solid black;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+  padding-top: 6px;
+}
+.imgPray{
+  width: 90%;
+}
+.rcornersWord {
+  /* border-radius: 25px;
+  border: 2px solid #73AD21;
+  width: 100px;
+  height: 100px; */
+  width: 100px;
+	height: 100px;
+  border: 2px solid brown;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+  padding-top: 13%;
+}
+.imgWord{
+  width: 100%;
+}
+.rcornersAbout {
+  /* border-radius: 25px;
+  border: 2px solid #73AD21;
+  width: 100px;
+  height: 100px; */
+  width: 100px;
+	height: 100px;
+  border: 2px solid #73AD21;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+  padding-top: 8%;
+}
+.imgAbout{
+  width: 100%;
+}
+.rcornersSermon {
+  /* border-radius: 25px;
+  border: 2px solid #73AD21;
+  width: 100px;
+  height: 100px; */
+  width: 100px;
+	height: 100px;
+  border: 2px solid crimson;
+	-moz-border-radius: 50px;
+	-webkit-border-radius: 50px;
+	border-radius: 50px;
+  padding-top: 8%;
+}
+.imgSermon{
+  width: 100%;
+}
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
+}
+
+.slider {
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  /* height: 100px; */
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider::before,
+.slider::after {
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  /* height: 100px; */
+  position: absolute;
+  width: 200px;
+  z-index: 2;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider .slide-track {
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+
+.slider .slide {
+  /* height: 100px; */
+  width: 250px;
+  margin-left: 5px;
+}
+.imgSlider{
+  width: 250px;
+  height: 324px;
+}

@@ -1,0 +1,41 @@
+<div id="myNav" [ngClass]="[mbMenu]" class="overlay navBgColor">
+  <a (click)="closeNav()"  class="closebtn">&times;</a>
+  <div class="overlay-content">
+    <div class="col-md-8">
+      <ul class="navbar-nav mr-auto" style="float: right;">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/">Home</a>
+        </li>
+
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            New Here
+          </a>
+          <div class="dropdown-menu fade-down" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" routerLink="/comingSoon">About Us</a>
+            <a class="dropdown-item" routerLink="/comingSoon">Service Timings</a>
+            <a class="dropdown-item" routerLink="/comingSoon">Contacts</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Ministry
+          </a>
+          <div class="dropdown-menu fade-down" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item" routerLink="/comingSoon">Outreach</a>
+            <a class="dropdown-item" routerLink="/comingSoon">Prayer Requests</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="navBgColor">
+  <div class="col-xs-1">
+    <span class="mb_menuIcon" (click)="openNav()">&#9776;</span>
+  </div>
+  <div class="col-xs-11">
+    <img src="{{logoUrl}}" style="width: 100%;">
+  </div>
+</div>
+

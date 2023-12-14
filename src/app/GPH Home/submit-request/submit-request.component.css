@@ -1,0 +1,9 @@
+.form-control,.txtSize{
+  font-size: 2rem !important;
+}
+.ng-invalid.ng-touched{
+  border-color: red;
+}
+.err-Text{
+  color: red;
+}

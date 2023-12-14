@@ -1,0 +1,13 @@
+.headerSectionImg{
+  height: 600px !important;
+  width: 100%;
+}
+.carousel-indicators li{
+  margin-right: 1%;
+}
+.carousel-indicators{
+  left: 0 !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  width: unset !important;
+}

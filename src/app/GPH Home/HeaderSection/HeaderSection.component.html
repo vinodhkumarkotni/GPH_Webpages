@@ -1,0 +1,21 @@
+<div id="carouselHeader" class="dvBoxShadow carousel slide carousel-fade" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselHeader"  *ngFor="let img of images;let index = index" [attr.data-slide-to]="index"></li>
+  </ol>
+  <div class="carousel-inner">
+      <div class="item" *ngFor="let img of images;let index = index;let isFirst = first" [ngClass]="{active:isFirst}">
+          <img class="headerSectionImg" [src]="img.imgUrl" [alt]="img.imgTitle">
+          <!-- <div class="carousel-caption d-none d-md-block">
+            <h1 [textContent]="img.imgTitle"></h1>
+            <p [textContent]="img.imgDesc"></p>
+          </div> -->
+      </div>
+  </div>
+  <a class="carousel-control left" href="#carouselHeader" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="carousel-control right" href="#carouselHeader" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+

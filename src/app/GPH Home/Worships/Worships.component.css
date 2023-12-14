@@ -1,0 +1,28 @@
+.dv_woships{
+  padding: 1%;
+  /* box-shadow: 0px 0px 4px 4px rgba(50, 50, 50, 0.75); */
+}
+.worshipTitle{
+  font-size: 40px;
+  text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+.dvcards {
+  margin: 0 0.5em;
+  box-shadow: 5px 5px rgba(0, 0, 0, 0.2);;
+  border: none;
+  border-radius: 0;
+  /* background-size: cover;
+  background-repeat:no-repeat; */
+  height: 400px;
+  /* width: 23%; */
+  margin-left: 18px;
+  margin-top: 18px;
+}
+.dvLocation{
+  position:absolute;                  /* added */
+   bottom:0;                           /* added */
+   left:0;
+}
+.img-fluid{
+  height: inherit;
+}

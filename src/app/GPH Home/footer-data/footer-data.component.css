@@ -1,0 +1,21 @@
+.btnFooterIcons{
+  color: rgb(223, 117, 117);
+    border-radius: 50%;
+    background-color: black;
+    margin: 0% 0% 1% 1%;
+    font-size: 100%;
+}
+.socila-icon-align{
+  float: right;
+  margin-left: auto;
+  margin-right: 0;
+}
+.dvFooterShadow{
+  /* box-shadow: 0px 1px rgba(0, 0, 0, 0.1); */
+  box-shadow: 0px -4px 3px rgba(0, 0, 0, 0.1);
+}
+
+.ftrli{
+  display: inline-block;
+  padding: 1%;
+}

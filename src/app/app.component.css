@@ -1,0 +1,21 @@
+.dskMenu{
+  display: block;
+  font-size: 20px;
+}
+.dskMenu a{
+  font-size: 20px;
+}
+.mblMenu{
+  display: none;
+}
+@media (max-width: 990px)
+{
+    .dskMenu{
+      display: none;
+    }
+    .mblMenu{
+      display: block;
+      padding: 0;
+    }
+}
+
